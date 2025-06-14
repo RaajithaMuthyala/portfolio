@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>LLM Evaluation – ICD Coding & Risk Prediction</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>LLM Evaluation – ICD Coding & Readmission Risk</h1>
+            <p>Zero-Shot Prompting with MIMIC-IV Discharge Summaries</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Project Section -->
+            <section id="one" class="main special">
+                <header class="major">
+                    <h2>Project Overview</h2>
+                </header>
+
+                <div class="content" style="max-width: 900px; margin: 0 auto;">
+
+                    <div style="text-align: justify;">
+                        <p>
+                            This project evaluates the reasoning capabilities of various Large Language Models (LLMs) on high-stakes clinical tasks using MIMIC-IV discharge summaries and zero-shot prompting. We assessed their performance on three key tasks: primary diagnosis generation, ICD-9 code prediction, and hospital readmission risk stratification.
+                        </p>
+                    </div>
+
+                    <h3>Methods</h3>
+                    <div style="text-align: justify;">
+                        <p>
+                            We selected a random sample of 300 patients from the MIMIC-IV dataset. Prompts were crafted using structured clinical sections (chief complaint, PMH, surgeries, labs, imaging) and fed into five LLMs via web UI: ChatGPT-4, LLaMA-3.1, Gemini-1.5, DeepSeek-R1, and OpenAI-O3. All interactions used zero-shot prompting to simulate real-world, no-code access.
+                        </p>
+                    </div>
+
+                    <h3>Key Features</h3>
+                    <div style="text-align: left; padding-left: 1em;">
+                        <p style="margin-bottom: 0.8em;">• Diagnosis and risk predictions compared against structured ground-truth from MIMIC-IV.</p>
+                        <p style="margin-bottom: 0.8em;">• ICD-9 code matching done via UMLS-based crosswalk and category rollups.</p>
+                        <p style="margin-bottom: 0.8em;">• Explanations extracted from both reasoning and non-reasoning models.</p>
+                        <p style="margin-bottom: 0.8em;">• Semantic similarity for diagnosis evaluated using SciBERT embeddings.</p>
+                    </div>
+
+                    <h3>Technologies Used</h3>
+                    <div style="text-align: left; padding-left: 1em;">
+                        <p style="margin-bottom: 0.6em;"><strong>Models:</strong> ChatGPT-4, LLaMA-3.1, Gemini-1.5, DeepSeek-R1, OpenAI-O3</p>
+                        <p style="margin-bottom: 0.6em;"><strong>Dataset:</strong> MIMIC-IV (300 discharge summaries)</p>
+                        <p style="margin-bottom: 0.6em;"><strong>Libraries:</strong> SciBERT, SentenceTransformers, Python (pandas, numpy)</p>
+                        <p style="margin-bottom: 0.6em;"><strong>Tools:</strong> Zero-shot prompting, UMLS ICD-9/10 crosswalk, Cosine similarity</p>
+                    </div>
+
+                    <h3>Results Summary</h3>
+                    <div style="text-align: left; padding-left: 1em;">
+                        <p style="margin-bottom: 0.8em;">• <strong>Diagnosis Accuracy:</strong> OpenAI-O3 (90%), DeepSeek-R1 (85%), LLaMA-3.1 (85%)</p>
+                        <p style="margin-bottom: 0.8em;">• <strong>ICD-9 Prediction:</strong> OpenAI-O3 (45.3%), LLaMA-3.1 (42.6%), ChatGPT-4 (40.6%)</p>
+                        <p style="margin-bottom: 0.8em;">• <strong>Readmission Prediction:</strong> DeepSeek-R1 (72.6%), OpenAI-O3 (70.6%)</p>
+                        <p style="margin-bottom: 0.8em;">• F1 scores remained low, highlighting challenges in zero-shot medical coding.</p>
+                    </div>
+
+                    <h3>Limitations & Future Work</h3>
+                    <div style="text-align: justify;">
+                        <p>
+                            None of the evaluated LLMs met full clinical-grade performance across all tasks. Future work includes fine-tuning, prompt engineering, and human-in-the-loop systems to enhance clinical reliability. We also plan to expand the dataset and integrate clinician feedback into model evaluation.
+                        </p>
+                    </div>
+
+                    <p style="margin-top: 2em; text-align: center;">
+                        <a href="https://github.com/RaajithaMuthyala/evaluate_chatbot_llms_for_healthcare" class="button primary" target="_blank">
+                            <i class="fab fa-github" style="margin-right: 6px;"></i>View Code on GitHub
+                        </a>
+                    </p>
+
+            
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>More Projects</h2>
+                <p>Explore other healthcare AI and data science case studies.</p>
+                <ul class="actions">
+                    <li><a href="index.html#second" class="button">Back to Projects</a></li>
+                </ul>
+            </section>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

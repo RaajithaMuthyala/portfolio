@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>NER + QA System using PubMed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1>NER + QA System</h1>
+        <p>Biomedical Named Entity Recognition & Question Answering with PubMed Data</p>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Project Section -->
+        <section id="one" class="main special">
+            <header class="major">
+                <h2>Project Overview</h2>
+            </header>
+
+            <!-- Project Image -->
+            <div style="margin-bottom: 2em; text-align: center;">
+                <img src="images/ner_qa_ui.png" alt="NER QA System UI" style="width: 100%; max-width: 700px; height: auto; border-radius: 0; box-shadow: 0 0 10px rgba(0,0,0,0.1);" />
+            </div>
+
+            <!-- Main Content -->
+            <div class="content" style="max-width: 900px; margin: 0 auto;">
+
+                <div style="text-align: justify;">
+                    <p>
+                        This project focuses on developing a biomedical question-answering system based on entity recognition from PubMed abstracts. We applied Named Entity Recognition (NER) to extract clinically relevant terms and fine-tuned a T5-small model for generating evidence-based answers from biomedical literature.
+                    </p>
+                </div>
+
+                <h3>Key Features</h3>
+                <div style="text-align: left; padding-left: 1em;">
+                    <p style="margin-bottom: 0.8em;">• Extracts biomedical entities (e.g., diseases, chemicals, procedures) using SciBERT + UMLS mapping.</p>
+                    <p style="margin-bottom: 0.8em;">• Fine-tuned T5-small model generates answers to domain-specific queries using extracted content.</p>
+                    <p style="margin-bottom: 0.8em;">• Fully interactive Streamlit interface for exploration and query-based retrieval.</p>
+                    <p style="margin-bottom: 0.8em;">• Supports real-time querying of biomedical knowledge grounded in PubMed.</p>
+                </div>
+
+                <h3>Technologies Used</h3>
+                <div style="text-align: left; padding-left: 1em;">
+                    <p style="margin-bottom: 0.6em;"><strong>NER:</strong> SciBERT, SpaCy, UMLS</p>
+                    <p style="margin-bottom: 0.6em;"><strong>QA Model:</strong> T5-small fine-tuned on domain-specific abstracts</p>
+                    <p style="margin-bottom: 0.6em;"><strong>Interface:</strong> Streamlit for QA interaction</p>
+                    <p style="margin-bottom: 0.6em;"><strong>Dataset:</strong> PubMed Abstracts, curated via MeSH and SDOH filters</p>
+                </div>
+
+                <h3>Explainability & Insights</h3>
+                <div style="text-align: justify;">
+                    <p>
+                        Each answer is backed by the exact PubMed abstract that informed the response. Entity extraction provides transparency into which parts of the text contribute to model output, helping users trace evidence. This approach improves trustworthiness and enables domain-specific validation.
+                    </p>
+                </div>
+
+                <h3>Streamlit UI</h3>
+                <div style="text-align: justify;">
+                    <p>
+                        The interface allows users to paste biomedical text or enter free-text questions. Extracted entities are highlighted, and selecting one generates a contextual answer from relevant PubMed content. This makes exploration both interactive and evidence-grounded.
+                    </p>
+                </div>
+
+                <!-- GitHub Button -->
+                <p style="margin-top: 2em; text-align: center;">
+                    <a href="https://github.com/RaajithaMuthyala/NLP--Extracting-and-Processing-PubMed-Abstracts-for-NER-and-Question-Answering" class="button primary" target="_blank">
+                        <i class="fab fa-github" style="margin-right: 6px;"></i>View Code on GitHub
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h2>More Projects</h2>
+            <p>Explore additional research and healthcare data applications.</p>
+            <ul class="actions">
+                <li><a href="index.html#second" class="button">Back to Projects</a></li>
+            </ul>
+        </section>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

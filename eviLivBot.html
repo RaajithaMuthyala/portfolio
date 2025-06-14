@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>EviLivBot - Project Detail</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>EviLivBot</h1>
+            <p>Explainable AI for Liver Disease and SDOH</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main" class="alt">
+
+            <!-- One -->
+            <section id="one" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>Project Overview</h2>
+                        </header>
+                        <p style="text-align: justify;">
+                            EviLivBot is a domain-specific, explainable AI application designed to analyze biomedical literature related to liver disease and Social Determinants of Health (SDOH). It fine-tunes the LLaMA 3.1 8B model to extract relevant biomedical entities and provide evidence-backed responses through a user-friendly interface.
+                        </p>
+
+                        <h3>Key Features</h3>
+                        <div style="text-align: left; padding-left: 1em;">
+                            <p style="margin-bottom: 0.8em;">Fine-tuning of the LLaMA 3.1 8B model on liver disease and SDOH abstracts.</p>
+                            <p style="margin-bottom: 0.8em;">Biomedical Named Entity Recognition (NER) to extract meaningful clinical concepts.</p>
+                            <p style="margin-bottom: 0.8em;">Explainable AI pipeline with evidence retrieval from structured JSON data.</p>
+                            <p style="margin-bottom: 0.8em;">Streamlit-based web interface for interactive exploration.</p>
+                        </div>
+
+                        <h3>Technologies Used</h3>
+                        <div style="text-align: left; padding-left: 1em;">
+                            <p style="margin-bottom: 0.6em;"><strong>LLM:</strong> LLaMA 3.1 8B (fine-tuned using PEFT/LoRA)</p>
+                            <p style="margin-bottom: 0.6em;"><strong>Libraries:</strong> Hugging Face Transformers, SpaCy, SciBERT, SentenceTransformers</p>
+                            <p style="margin-bottom: 0.6em;"><strong>Interface:</strong> Streamlit (for frontend + interaction)</p>
+                            <p style="margin-bottom: 0.6em;"><strong>Data:</strong> PubMed abstracts, MIMIC clinical notes, MedQA/SDOH concepts</p>
+                        </div>
+
+
+                        <h3>Explainability & Evidence Retrieval</h3>
+                        <p style="text-align: justify;">
+                            EviLivBot links extracted entities with evidence passages and source DOI links. This enables trust and interpretability, especially in sensitive domains like healthcare.
+                        </p>
+
+                        <h3>Streamlit UI</h3>
+                        <p style="text-align: justify;">
+                            The frontend enables users to paste clinical text, view extracted entities (e.g., diseases, treatments, risk factors), and click on them to explore related research excerpts.
+                        </p>
+
+                        <a href="https://github.com/yourusername/EviLivBot" class="button primary" target="_blank">View Code on GitHub</a>
+                    </div>
+                    <span class="image" style="border-radius: 0; overflow: visible; background: none; box-shadow: none;">
+                        <img src="images/eviLivBot_ui.png" alt="EviLivBot UI Screenshot" style="width: 600px; height: 400px; border-radius: 0;" />
+                    </span>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>More Projects</h2>
+                <p>Explore other healthcare AI and data science projects in the portfolio.</p>
+                <ul class="actions">
+                    <li><a href="index.html#second" class="button">Back to Projects</a></li>
+                </ul>
+            </section>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

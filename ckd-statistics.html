@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CKD Risk Prediction & Statistical Modeling</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1>CKD Risk Prediction</h1>
+        <p>Statistical Modeling & Clinical Parameter Analysis in R</p>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <section id="one" class="main special">
+            <header class="major">
+                <h2>Project Overview</h2>
+            </header>
+
+            
+
+            <div class="content" style="max-width: 900px; margin: 0 auto;">
+
+                <div style="text-align: justify;">
+                    <p>
+                        This project explores statistical modeling for Chronic Kidney Disease (CKD) risk prediction using clinical blood parameters. All analysis and modeling were conducted using R, with a focus on reproducibility, interpretability, and healthcare applicability.
+                    </p>
+                </div>
+
+                <h3>Workflow & Statistical Concepts</h3>
+                <div style="text-align: left; padding-left: 1em;">
+                    <p>• Performed Exploratory Data Analysis (EDA) to assess missing values, distributions, and outliers using <code>ggplot2</code> and <code>dplyr</code>.</p>
+                    <p>• Handled imputation and normalization with <code>tidyr</code> and <code>caret</code> preprocessing functions.</p>
+                    <p>• Conducted bivariate analysis to assess correlation between variables (e.g., urea, glucose, hypertension) and CKD status.</p>
+                    <p>• Built logistic regression models and classification trees using <code>glm()</code> and <code>rpart()</code>.</p>
+                    <p>• Evaluated model performance with k-fold cross-validation using <code>caret</code> and visualized metrics with <code>ROCR</code> and <code>pROC</code>.</p>
+                </div>
+
+                <h3>R Packages Used</h3>
+                <div style="text-align: left; padding-left: 1em;">
+                    <p><code>dplyr</code>, <code>ggplot2</code>, <code>tidyr</code>, <code>caret</code>, <code>pROC</code>, <code>rpart</code>, <code>ROCR</code>, <code>corrplot</code>, <code>e1071</code></p>
+                </div>
+
+                <h3>Clinical Relevance</h3>
+                <div style="text-align: justify;">
+                    <p>
+                        CKD is often underdiagnosed until late stages. This project emphasizes early identification using accessible clinical markers such as blood pressure, urea, creatinine, and glucose levels. Statistical models like logistic regression and decision trees offer explainability — making them suitable for practical clinical deployment.
+                    </p>
+                </div>
+
+                <h3>Insights</h3>
+                <div style="text-align: justify;">
+                    <p>
+                        Key predictors were visualized using variable importance plots and coefficient interpretation. Features such as proteinuria, hypertension, and serum creatinine consistently showed strong association with CKD status. Multicollinearity was checked using correlation matrices and variance inflation factors (VIF).
+                    </p>
+                </div>
+
+                <h3>Takeaways</h3>
+                <div style="text-align: justify;">
+                    <p>
+                        This project demonstrates the power of classical statistical models in clinical risk prediction. By combining EDA, domain knowledge, and reproducible R pipelines, we developed a CKD screening framework that is transparent and scalable for real-world use.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h2>More Projects</h2>
+            <p>Explore predictive modeling, healthcare analytics, and AI integration projects.</p>
+            <ul class="actions">
+                <li><a href="index.html#second" class="button">Back to Projects</a></li>
+            </ul>
+        </section>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
